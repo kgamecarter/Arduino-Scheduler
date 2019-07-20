@@ -46,7 +46,7 @@ extern size_t __malloc_margin;
 #define RAMEND 0x20008000
 #endif
 
-#elif defined(ARDUINO_ARCH_STM32F1)
+#elif defined(ARDUINO_ARCH_STM32F1) || defined(STM32F103xB)
 #if !defined(RAMEND)
 #define RAMEND 0x20005000
 #endif
